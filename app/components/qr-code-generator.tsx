@@ -21,7 +21,7 @@ export default function QRCodeGenerator() {
   const form = useForm<z.infer<typeof formSchema>>({
     resolver: zodResolver(formSchema),
     defaultValues: {
-      contentType: "text",
+      contentType: "url",
       content: "",
     },
   })
@@ -92,4 +92,3 @@ export default function QRCodeGenerator() {
     </div>
   )
 }
-
